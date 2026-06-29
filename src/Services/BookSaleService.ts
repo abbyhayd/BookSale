@@ -6,12 +6,13 @@ const apiKey = import.meta.env.VITE_API_KEY;
 export default{
     fetchPrices: async function fetchPrices(bookIds: string[], signal :AbortSignal){
         try{
+            console.log(apiKey)
             const response = await fetch(
                 `https://nriav1zg4d.execute-api.us-west-2.amazonaws.com/v1/prices?ids=${bookIds}`,
                 {
                     signal,
                     headers:{
-                        'x-api-key': `${apiKey}`,
+                        'x-api-key': apiKey,
                     }
                 }
             )
@@ -37,7 +38,7 @@ export default{
                 {
                     signal,
                     headers:{
-                        'x-api-key': `${apiKey}`,
+                        'x-api-key': apiKey,
                     }
                 }
             )
@@ -65,7 +66,7 @@ export default{
                     signal,
                     headers : {
                         'Content-Type' : 'application/json',
-                        'x-api-key': `${apiKey}`
+                        'x-api-key': apiKey
                     },
                     body : JSON.stringify(order)
                 }
