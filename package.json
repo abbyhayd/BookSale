@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "hw1": "cd ./hw1 && npm run dev",
-    "hw2": "cd ./hw2 && npm run dev",
-    "install_all": "cd ./hw1 && npm install && cd ../hw2 && npm install",
+    "hw1": "cd ./Book_Author_Endpoints && npm run dev",
+    "hw2": "cd ./Database_and_Auth && npm run dev",
+    "install_all": "cd ./Book_Author_Endpoints && npm install && cd ../Database_and_Auth && npm install",
     "all": "npm-run-all --parallel hw1 hw2 dev",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
