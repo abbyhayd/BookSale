@@ -1,0 +1,4 @@
+*.env
+node_modules/
+Book_Author_Endpoints/node_modules/
+Database_and_Auth/node_modules/
