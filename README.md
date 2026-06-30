@@ -7,6 +7,7 @@ Created as part of CPSC4720 - Web Development taught by Professor Tim Spinney at
 - src - Contains the React code that allows for the front end for the services described above. This also contains the logic behind the checkout process and the CSS styling for the website.
 
 Frameworks and Tools: React, Express, MongoDB
+
 Languages: Javascript, Typescript, CSS, HTML
 
 ## Experience
